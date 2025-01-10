@@ -994,9 +994,7 @@ color: #fff}
         .pdt_image {
             overflow: hidden; border-radius: 20px; 
             border: 1px solid #fff;
-            img {
-              border-radius: 20px;   
-            }
+            
         }
         .title {
             color: #fff;
@@ -1037,9 +1035,7 @@ color: #fff}
         .pdt_image {
             overflow: hidden; border-radius: 20px; 
              border: 1px solid #fff;
-            img {
-              border-radius: 20px;   
-            }
+           
         }
         .title {
             color: #fff;
@@ -1223,7 +1219,7 @@ color: #fff}
         transition: $transition;
          padding: 10px 70px ;
         text-transform: capitalize;
-        font-weight: 700; font-size: 20px;
+        font-weight: 700; font-size: 16px;
          background: #fff; color: $themecolor;
       
         &:hover {
@@ -1243,10 +1239,11 @@ color: #fff}
     border-radius: 12px;
     padding: 0 20px;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     background: transparent;
     outline: none; box-shadow: none;
     font-weight: 300;
+    font-family: $body_font;
     &:focus {
         border-color: rgba(255,255,255,0.20);
         outline: none; box-shadow: none;
