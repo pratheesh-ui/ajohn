@@ -1,0 +1,25 @@
+
+@font-face {
+    font-family: 'Amsi Pro Cond black';
+    src: url('AmsiProCondensed-Black.eot');
+    src: local('Amsi Pro Cond Black'), local('AmsiProCondensed-Black'),
+        url('AmsiProCondensed-Black.eot?#iefix') format('embedded-opentype'),
+        url('AmsiProCondensed-Black.woff2') format('woff2'),
+        url('AmsiProCondensed-Black.woff') format('woff'),
+        url('AmsiProCondensed-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Amsi Pro Cond semibold';
+    src: url('AmsiProCondensed-SemiBold.eot');
+    src: local('Amsi Pro Cond SemiBold'), local('AmsiProCondensed-SemiBold'),
+        url('AmsiProCondensed-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('AmsiProCondensed-SemiBold.woff2') format('woff2'),
+        url('AmsiProCondensed-SemiBold.woff') format('woff'),
+        url('AmsiProCondensed-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
