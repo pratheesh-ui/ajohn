@@ -1,7 +1,7 @@
 
 $themecolor: #e31e24; 
 $primary_color:#212121;
-$bg_light:#f9f9f9;
+$bg_light:#f0f0f0;
 $bg_light_yellow:#ffdc74;
 $title_color:#000;
 $text_color:#1f1f1f;
@@ -79,9 +79,7 @@ font-family: $body_font;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-    background: $bg_light;
-     background-image: url("../images/ptternmb.png");
-    background-repeat: repeat;
+ 
  
 }
 
@@ -157,16 +155,18 @@ font-family: $body_font;
 
 
 .header_sec {
-	 background-image: linear-gradient(to bottom, #fff, transparent);
+	// background-image: linear-gradient(to bottom, #fff, transparent);
+    background: transparent;
     width: 100%; position: fixed; top: 0; left: 0;
-   padding: 15px 0; display: flex; height: 80px; align-items: center;
+   padding: 15px 0; display: flex;  align-items: center;
 	z-index: 100;
     transition: all 0.2s ease-out 0s;
 	
 }
 
 .header_sec.header-active {
-    background: #fff
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(8,69,23,0.1)
 }
 
 .logo {
@@ -192,7 +192,9 @@ font-family: $body_font;
     display: none
 }
  
- 
+    .logo a img {
+        width: 90px
+    }
     
 }
 
@@ -223,6 +225,7 @@ font-family: $body_font;
         font-family: $primary_font_semi; 
         font-size: 20px;
         color: $text_color;
+        letter-spacing: .5px
     }
     
     .navbar-nav .nav-link.btnformat {
@@ -325,6 +328,11 @@ font-family: $body_font;
  
 
 @media (max-width: 991px) {
+    
+    .logo a img {
+        width: 90px
+    }
+    
      .mainNavCollapse {
     position: absolute;
          background: $themecolor;
@@ -343,12 +351,9 @@ font-family: $body_font;
          
 }
     
-    .logo a img {
-        width: 120px
-    }
-    
+  
     .header_sec {
-		background: #fff; height: 65px;
+		background: #fff;  
         
         
         .navbar-toggler {
@@ -600,15 +605,7 @@ color: #fff}
     
     position: relative; z-index: 1;
     
-    &:before {
-        content: "";
-        left: 0; top: 0;
-        width: 100%; height: 100%; position: absolute;
-          background-image: url("../images/pttern.png");
-    background-repeat: repeat;
-        z-index: -1; opacity: .5
-        
-    }
+     
     
     
     .swiper-button-prev, .swiper-button-next {
@@ -722,6 +719,13 @@ color: #fff}
     .banner_sec .hicon2 {
         top: 13%
     }
+    
+    .banner_sec .hicon3 img {
+        width: 50px
+    }
+    .banner_sec .hicon3 {
+        top: 73px
+    }
 }
 
 
@@ -797,7 +801,7 @@ color: #fff}
             padding: 60px; 
             border-radius: 30px;
             z-index: 1; position: relative; margin-top: -100px;
-            box-shadow: 0 3.8px 11px 0 rgba(0,0,0,0.07),0 0.5px 5px 0 rgba(0,0,0,0.04);
+            box-shadow: 0 3.8px 11px 0 rgba(0,0,0,0.12),0 0.5px 5px 0 rgba(0,0,0,0.07);
             
             .right {
                 img {
@@ -885,9 +889,7 @@ color: #fff}
             margin-bottom: 15px;
             &:last-child {
                     margin-right: 0;
-                .nav-link {
-                    border-bottom-color: transparent
-                }
+                
             }
         }
     }
@@ -895,7 +897,7 @@ color: #fff}
         box-shadow: none ; 
         border:1px solid rgba(0,0,0,0.17);
         display: block;
-      background: #fff;
+      background: $bg_light;
         font-weight: 700;
         padding: 20px 40px  ; 
         font-size: 18px; 
@@ -1100,7 +1102,7 @@ color: #fff}
         column-gap: 15px ;grid-row-gap: 15px
     }
     .gc_tabnav {
-        margin-bottom: 20px; margin-top: 10px
+        margin-bottom: 30px; margin-top: 10px
     }
     .product_sec {
         padding: 70px 0 60px 0  
@@ -1225,12 +1227,13 @@ color: #fff}
         border:0;
         box-shadow: none; outline: none;
         transition: $transition;
-         padding: 13px 70px ;
+         padding: 10px 70px ;
         text-transform: capitalize;
-        font-weight: 600; font-size: 20px;
+        font-weight: 700; font-size: 20px;
+         background: #fff; color: $themecolor;
       
         &:hover {
-            background: #fff; color: $themecolor
+            background: $themecolor; color: #fff
         }
     }
 }
