@@ -853,13 +853,15 @@ color: #fff}
     .about_btm_area {
         text-align: center;
         
-        .left  {
-            margin-bottom: 40px
-        }
+        
     }
     
  .about_btm_area   .mmt_item {
         width: 300px; max-width: 100%; margin: auto auto 30px
+    }
+    
+    .about_sec .about_btm_area .sec_in {
+        padding-bottom: 30px
     }
 }
 
